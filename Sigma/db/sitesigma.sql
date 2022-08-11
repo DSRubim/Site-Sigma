@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10-Ago-2022 às 01:11
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Tempo de geração: 11-Ago-2022 às 16:49
+-- Versão do servidor: 10.4.17-MariaDB
+-- versão do PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,7 @@ CREATE TABLE `adm` (
 --
 
 INSERT INTO `adm` (`id`, `usuario`, `senha`, `Ativo`) VALUES
-(1, 'pietro', '1234', 1);
+(1, 'Rubim\r\n', '1234', 1);
 
 -- --------------------------------------------------------
 
@@ -72,8 +72,9 @@ CREATE TABLE `contato` (
 --
 
 INSERT INTO `contato` (`ContatoID`, `Nome`, `Email`, `Telefone`, `Mensagem`) VALUES
-(1, 'Pietro', 'emailteste@gmail.com', '54050345040', 'Mensagem teste'),
-(2, 'Amanda', 'amanda@gmail.com', '51982993394', 'Amei o site!!!');
+(3, 'Rubim', 'teste@gmail.com', '992139219', 'oi '),
+(4, 'Sandro', 'sandromartinscosta@gmail.com', '519999999999', 'oie'),
+(5, 'Rubim', 'teste@gmail.com', '992139219', 'dsadsadsa');
 
 -- --------------------------------------------------------
 
@@ -96,10 +97,12 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`ProdutoID`, `Nome`, `Descricao`, `Imagem`, `Preco`, `CategoriaID`, `Ativo`) VALUES
-(1, 'Pietro Legal!', 'Pietro é muito legal!', 'http://s2.glbimg.com/lTUhRSG_HLiZm_hnV0PtPVRY1dw=/e.glbimg.com/og/ed/f/original/2016/04/05/2c.jpg', 1000, 1, 1),
-(2, 'Capivara Daora', 'Muito radical, sabia?', 'https://www.es.gov.br/Media/PortalES/Noticias/Capivarinha%20-%20Thassiane%20Targino%20-%20Ipram%20(1).jpeg', 2000, 1, 1),
-(3, 'Capivara Faxineira', 'Ele limpa tudo!', 'https://midias.correiobraziliense.com.br/_midias/jpg/2021/01/25/675x450/1_whatsapp_image_2021_01_25_at_09_58_25-6499776.jpeg', 300, 1, 1),
-(4, 'Jonas a capivara', 'Capivara das crias', 'https://cdn6.campograndenews.com.br/uploads/noticias/2021/08/20/ab0c1b3df5ac866e96c9f391dd89e77470273edd.jpg', 3000, 1, 1);
+(1, 'Capivara Risonha', 'KKKKKKKKKKKK', 'https://w7.pngwing.com/pngs/1011/560/png-transparent-capybara-games-sticker-telegram-others-mammal-carnivoran-hand.png', 1000, 1, 1),
+(2, 'Capivara Doente', 'ai ai to dodói ', 'https://img2.gratispng.com/20180428/wwe/kisspng-capybara-telegram-sticker-snout-clip-art-5ae48ffd0bc572.1326559315249285090482.jpg', 2000, 1, 1),
+(3, 'Capivara Gulosa', 'Fominha', 'https://e7.pngegg.com/pngimages/221/495/png-clipart-capybara-telegram-sticker-messaging-apps-others-mammal-food.png', 300, 1, 1),
+(4, 'Capivara Maromba ', 'WHEY', 'https://w7.pngwing.com/pngs/519/694/png-transparent-capybara-sticker-telegram-bear-others-mammal-food-cat-like-mammal.png', 3000, 1, 1),
+(5, 'Capivara Assustada', 'UI MEDO', 'https://w7.pngwing.com/pngs/843/194/png-transparent-sticker-capybara-telegram-capybara-mammal-carnivoran-dog-like-mammal.png', 400, 1, 1),
+(6, 'Capivara Nerd', 'UI LIVROS', 'https://w7.pngwing.com/pngs/696/1020/png-transparent-capybara-sticker-telegram-mammal-capybara-mammal-food-dog-like-mammal.png', 10000, 1, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -149,13 +152,13 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de tabela `contato`
 --
 ALTER TABLE `contato`
-  MODIFY `ContatoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ContatoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
